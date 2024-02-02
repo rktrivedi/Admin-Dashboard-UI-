@@ -1,5 +1,17 @@
+import Barchart from "../../Components/BarChart/Barchart";
 import ChartBox from "../../Components/ChartBox/ChartBox";
+import PieChartBox from "../../Components/PieChart/PieChart";
+import StackedAreaChart from "../../Components/StackedAreaChart/StackedAreaChart";
+
 import Topbox from "../../Components/TopBox/Topbox";
+import {
+  barChartBoxRevenue,
+  barChartBoxWalkins,
+  chartBoxConversion,
+  chartBoxRevenue,
+  chartBoxTopProduct,
+  chartBoxUser,
+} from "../../Data";
 import "./Home.scss";
 
 const Home = () => {
@@ -9,21 +21,29 @@ const Home = () => {
         <Topbox />
       </div>
       <div className="box box2">
-        <ChartBox />
+        <ChartBox {...chartBoxUser} />
       </div>
       <div className="box box3">
-        <ChartBox />
+        <ChartBox {...chartBoxTopProduct} />
       </div>
       <div className="box box4">
-        <ChartBox />
+        <PieChartBox />
       </div>
       <div className="box box5">
-        <ChartBox />
+        <ChartBox {...chartBoxConversion} />
       </div>
-      <div className="box box6">Box6</div>
-      <div className="box box7">Box7</div>
-      <div className="box box8">Box8</div>
-      <div className="box box9">Box9</div>
+      <div className="box box6">
+        <ChartBox {...chartBoxRevenue} />
+      </div>
+      <div className="box box7">
+        <StackedAreaChart />
+      </div>
+      <div className="box box8">
+        <Barchart {...barChartBoxRevenue} />
+      </div>
+      <div className="box box9">
+        <Barchart {...barChartBoxWalkins} />
+      </div>
     </div>
   );
 };

@@ -170,27 +170,129 @@ export const topDealUsers = [
     email: "sandeep.verma@example.com",
     amount: 55000,
   },
-  {
-    id: 8,
-    img: "https://files.prokerala.com/news/photos/imgs/1024/stills-from-telugu-film-hero-ram-347730.jpg",
-    username: "Aaradhya Desai",
-    email: "aaradhya.desai@example.com",
-    amount: 90000,
-  },
-  {
-    id: 9,
-    img: "https://files.prokerala.com/news/photos/imgs/1024/stills-from-telugu-film-hero-ram-347730.jpg",
-    username: "Kunal Kapoor",
-    email: "kunal.kapoor@example.com",
-    amount: 48000,
-  },
-  {
-    id: 10,
-    img: "https://files.prokerala.com/news/photos/imgs/1024/stills-from-telugu-film-hero-ram-347730.jpg",
-    username: "Shreya Mishra",
-    email: "shreya.mishra@example.com",
-    amount: 67000,
-  },
 ];
 
 export default topDealUsers;
+
+export const chartBoxUser = {
+  color: "#8884d8",
+  icon: "/userIcon.svg",
+  title: "Total Users",
+  datakey: "users",
+  number: "11.238",
+  percentage: 45,
+  chartData: [
+    { name: "Sun", users: 400 },
+    { name: "Mon", users: 600 },
+    { name: "Tue", users: 500 },
+    { name: "Wed", users: 700 },
+    { name: "Thu", users: 400 },
+    { name: "Fri", users: 500 },
+    { name: "Sat", users: 450 },
+  ],
+};
+
+export const chartBoxTopProduct = {
+  color: "#ffc658",
+  icon: "/productIcon.svg",
+  title: "Top Product",
+  datakey: "products",
+  number: "238",
+  percentage: 75,
+  chartData: [
+    { name: "Sun", products: 8 },
+    { name: "Mon", products: 12 },
+    { name: "Tue", products: 10 },
+    { name: "Wed", products: 15 },
+    { name: "Thu", products: 7 },
+    { name: "Fri", products: 9 },
+    { name: "Sat", products: 11 },
+  ],
+};
+
+export const chartBoxConversion = {
+  color: "#ff7f0e",
+  icon: "/conversionIcon.svg",
+  title: "Conversion Ratio",
+  datakey: "conversionRatio",
+  number: "2.5%",
+  percentage: 20,
+  chartData: [
+    { name: "Sun", conversionRatio: 3 },
+    { name: "Mon", conversionRatio: 2 },
+    { name: "Tue", conversionRatio: 2.5 },
+    { name: "Wed", conversionRatio: 3.2 },
+    { name: "Thu", conversionRatio: 2.8 },
+    { name: "Fri", conversionRatio: 2.6 },
+    { name: "Sat", conversionRatio: 2.3 },
+  ],
+};
+
+export const chartBoxRevenue = {
+  color: "#d62728",
+  icon: "/revenueIcon.svg",
+  title: "Total Revenue",
+  datakey: "revenue",
+  number: "$120K",
+  percentage: 90,
+  chartData: [
+    { name: "Sun", revenue: 18000 },
+    { name: "Mon", revenue: 25000 },
+    { name: "Tue", revenue: 20000 },
+    { name: "Wed", revenue: 30000 },
+    { name: "Thu", revenue: 15000 },
+    { name: "Fri", revenue: 22000 },
+    { name: "Sat", revenue: 19000 },
+  ],
+};
+
+export const barChartBoxRevenue = {
+  color: "#8884d8",
+  title: "Profit Earned",
+  datakey: "profit",
+  chartData: [
+    {
+      name: "Sun",
+      profit: 4000,
+    },
+    {
+      name: "Mon",
+      profit: 4000,
+    },
+    {
+      name: "Tue",
+      profit: 8000,
+    },
+    {
+      name: "Wed",
+      profit: 6000,
+    },
+    {
+      name: "Thu",
+      profit: 7000,
+    },
+    {
+      name: "Fri",
+      profit: 9000,
+    },
+    {
+      name: "Sat",
+      profit: 10000,
+    },
+  ],
+};
+
+export const barChartBoxWalkins = {
+  color: "#4CAF50",
+  title: "Walk-ins",
+  datakey: "walkins",
+  chartData: [
+    { name: "Sun", walkins: 200 },
+    { name: "Mon", walkins: 150 },
+    { name: "Tue", walkins: 180 },
+    { name: "Wed", walkins: 250 },
+    { name: "Thu", walkins: 220 },
+    { name: "Fri", walkins: 200 },
+    { name: "Sat", walkins: 180 },
+  ],
+};
