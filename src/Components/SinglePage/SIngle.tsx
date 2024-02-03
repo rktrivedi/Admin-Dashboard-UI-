@@ -1,5 +1,4 @@
 import {
-  CartesianGrid,
   Legend,
   Line,
   LineChart,
@@ -47,7 +46,7 @@ const SIngle = (props: Props) => {
             <LineChart
               width={500}
               height={300}
-              data={props.chart}
+              data={props.chart?.data}
               margin={{
                 top: 5,
                 right: 30,
